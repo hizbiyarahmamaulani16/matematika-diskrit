@@ -1,0 +1,13 @@
+cek_validasi_pembayaran(is_cash, is_transfer):
+    # Pembayaran harus berasal dari salah satu sumber saja
+    return is_cash ^ is_transfer
+
+# Contoh Penggunaan:
+transaksi_1 = cek_validasi_pembayaran(is_cash=False, is_transfer=True)
+print(f"Transaksi 1 (Pembayaran Transfer): {transaksi_1}") # Output: True (Valid)
+
+transaksi_2 = cek_validasi_pembayaran(is_cash=True, is_transfer=True)
+print(f"Transaksi 2 (Laporan Cash & Transfer ganda): {transaksi_2}") # Output: False (Data ganda)
+
+transaksi_3 = cek_validasi_pembayaran(is_cash=False, is_transfer=False)
+print(f"Transaksi 3 (Belum dibayar): {transaksi_3}") # Output: False
