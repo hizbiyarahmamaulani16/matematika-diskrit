@@ -1,0 +1,13 @@
+def validasi_metode_login(pakai_password, pakai_otp):
+    # Mengembalikan True jika pengguna memilih salah satu metode otentikasi saja
+    return pakai_password != pakai_otp
+
+# Contoh Penggunaan:
+user_1 = validasi_metode_login(pakai_password=True, pakai_otp=False)
+print(f"User 1 (Login via Password): {user_1}") # Output: True
+
+user_2 = validasi_metode_login(pakai_password=True, pakai_otp=True)
+print(f"User 2 (Kirim Password & OTP bersamaan): {user_2}") # Output: False (Error sistem)
+
+user_3 = validasi_metode_login(pakai_password=False, pakai_otp=False)
+print(f"User 3 (Tanpa Password & Tanpa OTP): {user_3}") # Output: False
