@@ -1,0 +1,9 @@
+terdeteksi_kamera = False
+terdeteksi_polisi = True
+
+kena_tilang = terdeteksi_kamera or terdeteksi_polisi
+
+if kena_tilang:
+    print("STATUS: Surat Tilang Terbit")
+else:
+    print("STATUS: Bebas Pelanggaran")
