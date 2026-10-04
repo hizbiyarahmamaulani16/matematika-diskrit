@@ -1,0 +1,9 @@
+teori_lulus = True
+praktik_lulus = False
+
+status_sertifikasi = teori_lulus and praktik_lulus
+
+if status_sertifikasi:
+    print("Selamat! Anda LULUS Sertifikasi")
+else:
+    print("Anda TIDAK LULUS: Harus mengikuti ujian ulang")
