@@ -1,0 +1,9 @@
+suhu_panas = True
+ruangan_ramai = False
+
+nyalakan_ac = suhu_panas or ruangan_ramai
+
+if nyalakan_ac:
+    print("Sistem AC: MENYALA Otomatis")
+else:
+    print("Sistem AC: MATI (Hemat Energi)")
