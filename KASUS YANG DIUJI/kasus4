@@ -1,0 +1,9 @@
+cuaca_cerah = True
+izin_atc = True
+
+siap_takeoff = cuaca_cerah and izin_atc
+
+if siap_takeoff:
+    print("Pesawat DIIZINKAN Take-Off")
+else:
+    print("Penerbangan DITUNDA (Penundaan/Delay)")
