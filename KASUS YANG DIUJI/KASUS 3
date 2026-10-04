@@ -1,0 +1,21 @@
+# Input Data
+tes_coding = True
+ipk_memenuhi = True
+lolos_interview = True
+pengalaman_kerja = False
+portfolio_github = False
+
+# Model Logika (3 AND, 2 OR)
+diterima = tes_coding and ipk_memenuhi and lolos_interview
+prioritas_gaji_tinggi = pengalaman_kerja or portfolio_github
+
+# Output
+if diterima:
+    print("Kandidat DITERIMA bekerja")
+else:
+    print("Kandidat TIDAK DITERIMA bekerja")
+
+if prioritas_gaji_tinggi:
+    print("Kandidat mendapat PRIORITAS negosiasi gaji")
+else:
+    print("Kandidat tidak mendapat prioritas negosiasi gaji")
