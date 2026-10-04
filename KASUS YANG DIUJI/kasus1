@@ -1,0 +1,9 @@
+pake_keycard = True
+pake_pin = False
+
+izin_masuk = pake_keycard ^ pake_pin
+
+if izin_masuk:
+    print("Pintu Ruang Server TERBUKA")
+else:
+    print("Akses DITOLAK: Gunakan salah satu metode verifikasi")
