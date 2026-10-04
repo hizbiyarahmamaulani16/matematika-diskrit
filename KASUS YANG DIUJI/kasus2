@@ -1,0 +1,9 @@
+sensor_gelap = True
+jadwal_malam = True
+
+ubah_ke_darkmode = sensor_gelap ^ jadwal_malam
+
+if ubah_ke_darkmode:
+    print("Mode Layar: DARK MODE Aktif")
+else:
+    print("Mode Layar: LIGHT MODE (Standar)")
