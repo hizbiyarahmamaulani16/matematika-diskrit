@@ -1,0 +1,9 @@
+is_ultah = False
+is_member_prioritas = True
+
+dapat_diskon = is_ultah or is_member_prioritas
+
+if dapat_diskon:
+    print("Selamat! Anda Mendapatkan Diskon 20%")
+else:
+    print("Harga Reguler Diberlakukan")
