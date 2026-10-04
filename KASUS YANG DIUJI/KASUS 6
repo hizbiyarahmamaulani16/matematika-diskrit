@@ -1,0 +1,21 @@
+# Input Data
+cuaca_bagus = True
+mesin_normal = True
+bahan_bakar_cukup = True
+status_vip = False
+penerbangan_darurat = False
+
+# Model Logika (3 AND, 2 OR)
+izin_takeoff = cuaca_bagus and mesin_normal and bahan_bakar_cukup
+prioritas_landasan = status_vip or penerbangan_darurat
+
+# Output
+if izin_takeoff:
+    print("Pesawat DIIZINKAN Take-off")
+else:
+    print("Pesawat DILARANG Take-off")
+
+if prioritas_landasan:
+    print("Pesawat mendapat PRIORITAS antrean landasan")
+else:
+    print("Pesawat mendapat antrean standar")
