@@ -1,0 +1,9 @@
+belum_minum_obat = False
+waktu_alarm = True
+
+bunyikan_alarm = belum_minum_obat ^ waktu_alarm
+
+if bunyikan_alarm:
+    print("ALARM: Segera Minum Obat Anda!")
+else:
+    print("Status Pengingat: Normal / Sudah Terlaksana")
