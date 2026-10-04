@@ -1,0 +1,20 @@
+IPK_memenuhi = True
+ekonomi_mampu = True  # Bebas dari kendala biaya / memenuhi syarat kriteria
+sertifikat_bahasa = True
+prestasi_nasional = False
+organisasi = True
+
+# Model Logika (3 AND, 2 OR)
+layak_beasiswa = IPK_memenuhi and ekonomi_mampu and sertifikat_bahasa
+prioritas_beasiswa = prestasi_nasional or organisasi
+
+# Output
+if layak_beasiswa:
+    print("Peserta LAYAK menerima beasiswa")
+else:
+    print("Peserta TIDAK LAYAK menerima beasiswa")
+
+if prioritas_beasiswa:
+    print("Peserta mendapat PRIORITAS pencairan")
+else:
+    print("Peserta tidak mendapat prioritas pencairan")
